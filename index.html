@@ -13,76 +13,182 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
 
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Dropbox</title>
 </head>
 <body>
 
     <header>
-
-        <!-- Navigation bar -->
-        <nav>
-
-            <ul>
-
-                <li><a href="#"><img src="img/logo-small.png" alt="Dropbox logo"></a></li>
-                <li><a href="#">Perch&eacute; Dropbox&quest;</a></li>
-                <li><a href="#">Funzioni</a></li>
-                <li><a href="#">Piani e prezzi</a></li>
-
-            </ul>
-
-            <ul>
-
-                <li><a href="#">Supporto</a></li>
-                <li><a href="#">Contatta l'ufficio vendite</a></li>
-                <li><a href="#">Accedi</a></li>
-                <li><button class="button blue-bg">Inizia</button></li>
-
-            </ul>
-
-        </nav>
         
-        <!-- Jumbotron -->
+        <div id="header-container">
 
-        <div>
+            <!-- Navigation bar -->
+            <nav id="nav-bar" class="clearfix">
 
-            <div>
-    
-                <h1>Tutto ci&oacute; che ti serve per il lavoro, in un unico posto</h1>
-    
-                <p>finalmente i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business &eacute; pi&uacute; di uno spazio di archiviazione sicuro: &eacute; un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
-                
-                <button>Inizia qui la tua prova gratuita</button>
-    
-                <p>Annulla in qualsiasi momento</p>
-    
-                <h3><i class="fa-solid fa-arrow-down"></i></h3>
-    
-                <img src="img/jumbo.png" alt="immagine schermata Dropbox">
-    
+                <ul class="fl">
+
+                    <li><a href="#"><img src="img/logo-small.png" alt="Dropbox logo"></a></li>
+                    <li><a href="#">Perch&eacute; Dropbox&quest;</a></li>
+                    <li><a href="#">Funzioni</a></li>
+                    <li><a href="#">Piani e prezzi</a></li>
+
+                </ul>
+
+                <ul class="fr">
+
+                    <li><a href="#">Supporto</a></li>
+                    <li><a href="#">Contatta l'ufficio vendite</a></li>
+                    <li><a href="#">Accedi</a></li>
+                    <li><button class="button">Inizia</button></li>
+
+                </ul>
+
+            </nav>
+            
+            <!-- Jumbotron -->
+
+            <div id="jumbotron">
+
+                <div>
+        
+                    <h1>Tutto ci&oacute; che ti serve per il lavoro, in un unico posto</h1>
+        
+                    <p>finalmente i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business &eacute; pi&uacute; di uno spazio di archiviazione sicuro: &eacute; un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
+                    
+                    <button class="button">Inizia qui la tua prova gratuita</button>
+        
+                    <p>Annulla in qualsiasi momento</p>
+        
+                    <h3>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </h3>
+        
+                    <img id="jumbo-img" src="img/jumbo.png" alt="immagine schermata Dropbox">
+        
+                </div>
+
             </div>
-
+        
         </div>
-
 
     </header>
 
     <main>
 
         <!-- Business Plan -->
-        <section></section>
+        <section id="bp-sect" class="">
+
+            <div class="wrapper">
+                
+                <h2>Trova il piano Dropbox Business che fa per te</h2>
+                <form action="#">
+
+                    <input type="radio"> Fatturazione mensile
+                    <input type="radio"> Fatturazione annuale
+
+                </form>
+
+                <div class="row clearfix">
+
+                    <div class="col fl">
+
+                        <div class="col-header">
+
+                            <h5><i class="fa-solid fa-user"></i> Singolo</h5>
+
+                        </div>
+
+                        <div class="col-content">
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col fl">
+
+                        <div class="col-header">
+
+                            <h5><i class="far fa-building"></i> Team</h5>
+                        
+                        </div>
+
+                        <div class="col-content"></div>
+
+
+                    </div>
+
+                    <div class="col fl">
+
+                        <div class="col-header">
+
+                            <h5><i class="far fa-building"></i> Team</h5>
+
+                        </div>
+                        <div class="col-content"></div>
+
+                    </div>
+
+                    
+                </div>
+
+                <div class="row">
+
+                    <div class="row-header"></div>
+                    <div class="row-content"></div>
+
+                </div>
+
+            </div>
+
+        </section>
 
         <!-- Partner contact -->
-        <section></section>
+        <section id="pc-sect" class="">
+
+            <div class="wrapper">
+
+
+
+            </div>
+
+        </section>
 
         <!-- Dropbox Business Operations -->
-        <section></section>
+        <section id="dbo-sect" class="">
 
-        <!-- Team utilizing Dropbox -->
-        <section></section>
+            <div class="wrapper">
+
+
+
+            </div>
+
+        </section>
+
+        <!-- Team Utilizing Dropbox -->
+        <section id="tud-sect" class="">
+
+            <div class="wrapper">
+
+
+
+            </div>
+
+        </section>
 
         <!-- F.A.Q. -->
-        <section></section>
+        <section id="faq-sect" class="">
+
+            <div class="wrapper">
+
+
+
+            </div>
+
+        </section>
 
     </main>
 
