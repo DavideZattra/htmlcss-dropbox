@@ -19,6 +19,7 @@ h1{
 
 h2{
     font-size: 2.5em;
+    padding-bottom: 40px;
 }
 
 header nav ul li{
@@ -100,15 +101,11 @@ header nav ul li>a{
 
 .wrapper{
     width: 80%;
-    /* height: 100vh; */
-    /* background-color: cyan; */
     margin: 0 auto;
 }
 
 .row{
     width: 100%;
-    /* height: 1000px; */
-    /* margin-top: 40px; */
 }
 
 .col{
@@ -170,15 +167,9 @@ header nav ul li>a{
 }
 
 .col-content .fa-check{
-    /* display: inline-block;
-    margin-bottom:0.9em; */
     color: rgb(0, 97, 255);
 }
 
-/* .li-format{
-    display: inline-block;
-    width: 80%;
-} */
 
 .row-header{
     height: 40px;
@@ -206,14 +197,12 @@ header nav ul li>a{
 
 .col img{
     width: 100%;
-    /* margin: auto; */
 }
 
 .logo{
     display: inline-block;
     width: 150px;
     vertical-align: middle;
-    /* filter:  saturate(100%) brightness(97%) ; */
 }
 
 .col hr{
@@ -226,8 +215,6 @@ header nav ul li>a{
     width: 50%;
     height: 228px;
     padding: 50px;
-    /* line-height: 228px;
-    vertical-align: middle; */
 }
 
 .bordertop{
@@ -282,11 +269,14 @@ header nav ul li>a{
 }
 
 
-#bp-sect,
+#bp-sect{
+    padding-top: 15%;
+}
+
 #pc-sect,
 #dbo-sect,
 #tud-sect {
-    padding-top: 15%;
+    padding-top: 10%;
 }
 
 #bp-sect>.wrapper>h2{
@@ -343,7 +333,7 @@ header nav ul li>a{
 }
 
 #tud-sect .col:nth-child(2){
-     margin: 80px 0 0 0;
+     margin: 40px 0 0 0;
      padding: 50px 50px;
      width: 40%;
      background-color: rgb(247, 247, 247);
@@ -353,17 +343,21 @@ header nav ul li>a{
     padding-bottom: 25px;
 } 
 
-#tud-sect div.lightblue-bg{
-    height: 400px;
+#tud-sect div.lightblue-bg .wrapper{
+    padding: 100px 80px;
 }
 
-#tud-sect div.lightblue-bg .wrapper{
-    padding: 100px 0;
-    height: 400px;
+#tud-sect .txt{
+    width: 60%;
 }
 
 #faq-sect{
     padding: 80px 0;
+}
+
+#tud-sect h2{
+    display: block;
+    width: 55%;
 }
 
 #faq-sect h4{
@@ -406,7 +400,7 @@ header nav ul li>a{
 }
 
 
-/* recap: fix checklist, fix jumbotron, import font weight 500*/
+/* recap: import font weight 500*/
 
 
 /* Customize the label (the container) */
