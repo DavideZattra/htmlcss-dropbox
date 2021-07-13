@@ -8,8 +8,6 @@
 body{
 
     font-family: 'Open Sans', sans-serif;
-    min-width: 1340px;
-    max-width: 1530px;
     margin: 0 auto;
 }
 
@@ -67,6 +65,10 @@ header nav ul li>a{
     background-color: rgba(255, 255, 0, 0.856);
 }
 
+.lightblue-bg{
+background-color: rgb(215, 229, 252);
+}
+
 .amaranth-txt{
     color: rgba(155, 25, 25, 0.842);
 }
@@ -86,9 +88,13 @@ header nav ul li>a{
     float: right;
 }
 
-.lightblue-bg{
-    background-color: rgb(215, 229, 252);
+.hr{
+    height: 1px;
+    width: 20%;
+    background-color: lightgrey;
+    margin-top: 20px;
 }
+
 
 .button{
     background-color: rgb(0, 97, 255);
@@ -100,7 +106,8 @@ header nav ul li>a{
 }
 
 .wrapper{
-    width: 80%;
+    position:relative;
+    width: 1000px;
     margin: 0 auto;
 }
 
@@ -112,6 +119,7 @@ header nav ul li>a{
     width: 30%;
     height: 900px;
     margin-top: 40px;
+    margin-right: 5%;
     border: 1px solid black;
 }
 
@@ -120,6 +128,14 @@ header nav ul li>a{
     text-align: center;
     border-bottom: 1px solid black;
     line-height: 40px;
+}
+
+.bordertop{
+    border-top: 1px solid black;
+}
+
+.borderbottom{
+    border-bottom: 1px solid black;
 }
 
 .col-header h4{
@@ -132,13 +148,6 @@ header nav ul li>a{
     height: calc(100% - 40px);
     padding: 40px 30px ;
 
-}
-
-.hr{
-    height: 1px;
-    width: 20%;
-    background-color: lightgrey;
-    margin-top: 20px;
 }
 
 .col-content .button{
@@ -217,14 +226,6 @@ header nav ul li>a{
     padding: 50px;
 }
 
-.bordertop{
-    border-top: 1px solid black;
-}
-
-.borderbottom{
-    border-bottom: 1px solid black;
-}
-
 .svg-box img{
     width: 150px;
     position: absolute;
@@ -235,8 +236,19 @@ header nav ul li>a{
     
 }
 
+#bp-sect{
+    padding-top: 150px;
+}
+
+#pc-sect,
+#dbo-sect,
+#tud-sect {
+    padding-top: 125px;
+}
+
+/* Header part styling*/
+
 #nav-bar{
-    height: 5vh;
     padding: 10px;
 }
 
@@ -258,30 +270,93 @@ header nav ul li>a{
 
 #jumbo-img{
     position: absolute;
-    right: 0;
-    bottom: -100px;
-    width: 65%;
+    right: -175px;
+    bottom: -175px;
+    width: 90%;
 }
 
-#bp-sect .col:nth-child(2){
-    margin: 40px 5% 0 5%;
-  
-}
+/* Business Plan section styling*/
 
-
-#bp-sect{
-    padding-top: 15%;
-}
-
-#pc-sect,
-#dbo-sect,
-#tud-sect {
-    padding-top: 10%;
+#bp-sect .col:last-child{
+    margin-right: 0;
+    
 }
 
 #bp-sect>.wrapper>h2{
     padding-bottom: 60px;
 }
+
+/* BUTTON SECTION STYLING */
+
+/* Customize the label (the container) */
+.radio-container {
+    display: inline-block;
+    position: relative;
+    padding-right: 35px;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+  .radiomark {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 1em;
+    width: 1em;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .radio-container:hover input ~ .radiomark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .radio-container input:checked ~ .radiomark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .radiomark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .radio-container input:checked ~ .radiomark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .radio-container .radiomark:after {
+    top: 0.5em;
+    left: 0.5em;
+    transform: translate(-50%, -50%);
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background: white;
+  }
+  
+/* Partner Contact section styling */
 
 #pc-sect-img{
     width: 50%;
@@ -308,15 +383,22 @@ header nav ul li>a{
     border: 1.5px solid black;
 }
 
+/* Dropbox business Operation section styling */
+
 #dbo-sect h1{
     font-size: 2.5em;
 }
 
 #dbo-sect .col{
     height: fit-content;
-    padding: 0 30px 50px;
+    padding-bottom: 50px;
     border: none;
 }
+
+#dbo-sect .row .col:last-child{
+    margin-right: 0;
+}
+
 
 #dbo-sect h3{
     font-size: 1.5em;
@@ -327,14 +409,17 @@ header nav ul li>a{
     font-weight: 500;
 }
 
+/* Team Utilizing Dropbox section styling*/
+
 #tud-sect .col{
+    margin: 0;
     height: fit-content;
     border: none;
 }
 
 #tud-sect .col:nth-child(2){
-     margin: 40px 0 0 0;
-     padding: 50px 50px;
+     margin: 0 0 0 0;
+     padding: 37.5px 50px;
      width: 40%;
      background-color: rgb(247, 247, 247);
 }
@@ -351,13 +436,15 @@ header nav ul li>a{
     width: 60%;
 }
 
+/* F.A.Q. section styling*/
+
 #faq-sect{
     padding: 80px 0;
 }
 
 #tud-sect h2{
     display: block;
-    width: 55%;
+    width: 70%;
 }
 
 #faq-sect h4{
@@ -369,6 +456,8 @@ header nav ul li>a{
     background-color: black;
     padding: 60px 0;
 }
+
+/* Footer section styling */
 
 #footer-container .col{
     width: 20%;
@@ -400,71 +489,3 @@ header nav ul li>a{
 }
 
 
-/* recap: 
-
-
-/* Customize the label (the container) */
-.radio-container {
-    display: inline-block;
-    position: relative;
-    padding: 0 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  /* Hide the browser's default radio button */
-  .radio-container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  /* Create a custom radio button */
-  .radiomark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-    border-radius: 50%;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .radio-container:hover input ~ .radiomark {
-    background-color: #ccc;
-  }
-  
-  /* When the radio button is checked, add a blue background */
-  .radio-container input:checked ~ .radiomark {
-    background-color: #2196F3;
-  }
-  
-  /* Create the indicator (the dot/circle - hidden when not checked) */
-  .radiomark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the indicator (dot/circle) when checked */
-  .radio-container input:checked ~ .radiomark:after {
-    display: block;
-  }
-  
-  /* Style the indicator (dot/circle) */
-  .radio-container .radiomark:after {
-    top: 9px;
-    left: 9px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: white;
-  }
