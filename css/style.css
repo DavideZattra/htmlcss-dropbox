@@ -247,16 +247,20 @@ header nav ul li>a{
 }
 
 #jumbo-txt{
-    width: 300px;
+    width: 30%;
     padding: 50px 15px 0 0;
-    /* background-color: blue; */
+    
+}
+
+#jumbo-txt p{
+    padding: 10px 0 25px 0;
 }
 
 #jumbo-img{
     position: absolute;
     right: 0;
     bottom: -100px;
-    width: 70%;
+    width: 65%;
 }
 
 #bp-sect .col:nth-child(2){
@@ -295,6 +299,10 @@ header nav ul li>a{
     height: fit-content;
     padding: 0 25px;
     border: none;
+}
+
+#dbo-sect h2{
+    font-size: 1.5em;
 }
 
 #dbo-sect p{
