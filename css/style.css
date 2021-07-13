@@ -400,14 +400,14 @@ header nav ul li>a{
 }
 
 
-/* recap: import font weight 500*/
+/* recap: 
 
 
 /* Customize the label (the container) */
 .radio-container {
-    display: block;
+    display: inline-block;
     position: relative;
-    padding-left: 35px;
+    padding: 0 35px;
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;
