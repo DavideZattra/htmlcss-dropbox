@@ -66,7 +66,7 @@ header nav ul li>a{
 }
 
 .lightblue-bg{
-background-color: rgb(215, 229, 252);
+    background-color: rgb(215, 229, 252);
 }
 
 .amaranth-txt{
@@ -115,18 +115,18 @@ background-color: rgb(215, 229, 252);
     width: 100%;
 }
 
-.col{
+.column{
     width: 30%;
     height: 900px;
     margin-top: 40px;
     margin-right: 5%;
-    border: 1px solid black;
+    border: 1px solid lightgrey;
 }
 
-.col-header{
+.column-header{
     height: 40px;
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid lightgrey;
     line-height: 40px;
 }
 
@@ -138,44 +138,44 @@ background-color: rgb(215, 229, 252);
     border-bottom: 1px solid black;
 }
 
-.col-header h4{
+.column-header h4{
     
     font-weight: 600;
 }
 
-.col-content{
+.column-content{
     width: 100%;
     height: calc(100% - 40px);
     padding: 40px 30px ;
 
 }
 
-.col-content .button{
+.column-content .button{
     width: 100%;
     margin: 40px 0 30px 0;
 }
 
-.col-content h5{
+.column-content h5{
     margin: 15px 0 10px 0;
 }
 
-.col-content ul{
+.column-content ul{
     padding-top: 20px;
     list-style: none;
 }
 
-.col-content li{
+.column-content li{
     padding-bottom: 15px;
     padding-left: 1.3em; 
     font-size: 0.9em;
 }
 
-.col-content .fas,
-.col-content .far{
+.column-content .fas,
+.column-content .far{
     margin-left: -1.3em;
 }
 
-.col-content .fa-check{
+.column-content .fa-check{
     color: rgb(0, 97, 255);
 }
 
@@ -184,7 +184,7 @@ background-color: rgb(215, 229, 252);
     height: 40px;
     line-height: 40px;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid lightgrey;
     margin-top: 80px;
 }
 
@@ -194,9 +194,9 @@ background-color: rgb(215, 229, 252);
 
 .row-content{
     width: 100%;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
     padding: 20px;
 }
 
@@ -204,7 +204,7 @@ background-color: rgb(215, 229, 252);
     padding: 30px 0;
 }
 
-.col img{
+.column img{
     width: 100%;
 }
 
@@ -214,7 +214,7 @@ background-color: rgb(215, 229, 252);
     vertical-align: middle;
 }
 
-.col hr{
+.column hr{
     width: 80px;
     margin: 60px 0;
 }
@@ -236,13 +236,13 @@ background-color: rgb(215, 229, 252);
     
 }
 
-#bp-sect{
+#businessplan-sect{
     padding-top: 150px;
 }
 
-#pc-sect,
-#dbo-sect,
-#tud-sect {
+#contact-partner-sect,
+#business-operation-sect,
+#team-utilizing-sect {
     padding-top: 125px;
 }
 
@@ -347,41 +347,41 @@ background-color: rgb(215, 229, 252);
 
 /* Business Plan section styling*/
 
-#bp-sect .col:last-child{
+#businessplan-sect .column:last-child{
     margin-right: 0;
     
 }
 
-#bp-sect>.wrapper>h2{
+#businessplan-sect>.wrapper>h2{
     padding-bottom: 60px;
 }
 
-#bp-sect .col-content h4{
+#businessplan-sect .column-content h4{
     font-size: 1em;
 }
   
 /* Partner Contact section styling */
 
-#pc-sect-img{
+#contact-partner-sect-img{
     width: 50%;
 }
 
-#pc-sect .text{
+#contact-partner-sect .text{
     width: 50%;
     padding: 40px 100px 40px 70px;
 }
 
-#pc-sect h2{
+#contact-partner-sect h2{
     font-size: 1.6em;
 }
 
-#pc-sect p{
-    padding: 35px 0;
+#contact-partner-sect p{
+    padding-bottom: 35px;
     line-height: 30px;
 }
 
 
-#pc-sect .button{
+#contact-partner-sect .button{
     color: black;
     background-color: white;
     border: 1.5px solid black;
@@ -389,56 +389,63 @@ background-color: rgb(215, 229, 252);
 
 /* Dropbox business Operation section styling */
 
-#dbo-sect h1{
+#business-operation-sect h1{
     font-size: 2.5em;
 }
 
-#dbo-sect .col{
+#business-operation-sect .column{
     height: fit-content;
     padding-bottom: 50px;
     border: none;
 }
 
-#dbo-sect .row .col:last-child{
+#business-operation-sect .row .column:last-child{
     margin-right: 0;
 }
 
 
-#dbo-sect h3{
+#business-operation-sect h3{
     font-size: 1.5em;
 }
 
 
-#dbo-sect p{
+#business-operation-sect p{
     padding-top: 20px;
     font-weight: 500;
 }
 
 /* Team Utilizing Dropbox section styling*/
 
-#tud-sect .col{
+#team-utilizing-sect .column{
     margin: 0;
+    height: 456px;
     height: fit-content;
     border: none;
 }
 
-#tud-sect .col:nth-child(2){
+#team-utilizing-sect .column:nth-child(2){
      margin: 0 0 0 0;
      padding: 37.5px 50px;
      width: 40%;
+     height: 456px;
      background-color: rgb(247, 247, 247);
 }
 
-#tud-sect .col:nth-child(2) p{
+#team-utilizing-sect .column:nth-child(2) p{
     padding-bottom: 25px;
 } 
 
-#tud-sect div.lightblue-bg .wrapper{
+#team-utilizing-sect div.lightblue-bg .wrapper{
     padding: 100px 80px;
 }
 
-#tud-sect .txt{
+#team-utilizing-sect .txt{
     width: 60%;
+}
+
+#team-utilizing-sect h2{
+    display: block;
+    width: 70%;
 }
 
 /* F.A.Q. section styling*/
@@ -447,24 +454,20 @@ background-color: rgb(215, 229, 252);
     padding: 80px 0;
 }
 
-#tud-sect h2{
-    display: block;
-    width: 70%;
-}
 
 #faq-sect h4{
     display: inline-block;
     line-height: 80px;
 }
 
+/* Footer section styling */
+
 #footer-container{
     background-color: black;
     padding: 60px 0;
 }
 
-/* Footer section styling */
-
-#footer-container .col{
+#footer-container .column{
     width: 20%;
     border: none;
     margin: 0;
@@ -489,7 +492,7 @@ background-color: rgb(215, 229, 252);
     margin:80px 0 40px 0;
 }
 
-#lang-sel{
+#footer-lang-sel{
     color: white;
 }
 
